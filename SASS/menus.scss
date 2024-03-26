@@ -1,0 +1,109 @@
+@import 'var.scss';
+
+.restaurant {
+    padding: 20px;
+}
+
+.top-img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.menu-img {
+    width: auto;
+    height: 275px;
+}
+
+.menu {
+    background: rgba(246, 246, 246, 1);
+    margin: 0 auto;
+    border-radius: 25px;
+    transform: translateY(-50px);
+    max-width: 1055px;
+
+}
+
+.menu-title {
+    background-color: $color-background-secondary;
+    border-radius: 30px;
+    transform: translateY(-35px);
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+    h2 {
+        padding-top: 30px;
+        padding-left: 10px;
+        font-family: $font-shrikhand;
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 41px;
+        color: rgba(16, 16, 16, 1);
+    }
+
+    .like-img {
+        height: 20px;
+        width: 35px;
+        position: relative;
+    }
+}
+
+.empty-img {
+    height: 21px;
+    width: 22px;
+    position: absolute;
+    border-radius: unset;
+    opacity: 100;
+    transition: opacity 0.5s;
+}
+
+.filled-img {
+    height: 21px;
+    width: 22px;
+    position: absolute;
+    border-radius: unset;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    a {
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+.meals {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0px 20px 0px 20px;
+
+    h3 {
+        display: flex;
+        align-items: flex-start;
+        border-bottom: 3px solid #99e2d0;
+        width: 40px;
+        padding-bottom: 10px;
+        font-style: $font-roboto;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (min-width:320px) {
+
+    .menu-title h2 {
+        padding-left: 10px;
+        margin-right: 40px;
+    }
+}

@@ -1,0 +1,119 @@
+@import 'var.scss';
+
+.tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0px;
+    background-color: $color-badge-background;
+    transition: all 1s linear;
+}
+
+.tickmark {
+    background-color: $color-background-white;
+    border-radius: 50%;
+    width: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.order-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: -40px;
+}
+
+.gradient-background {
+    @include gradient-background(#9356DC, #FF79DA, to top);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px 0px #00000040;
+    border: 1px;
+    border-radius: 25px;
+    color: $color-background-white;
+    width: 186px;
+    height: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: $font-roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+
+    p {
+        font-family: $font-roboto;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+.How-it-works {
+    background-color: $color-background-secondary;
+    padding: 20px;
+
+    .steps-list {
+        padding-bottom: 50px;
+
+        .buttons {
+            width: 100%;
+            border-radius: 20px;
+            background: $color-background-secondary;
+            box-shadow: 0px 4px 15px 0px #00000026;
+            border: 1px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+        }
+    }
+
+    i {
+        margin: 10px;
+    }
+}
+
+.circle {
+    display: Flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: $color-tertiary;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro-button {
+    border-radius: 25px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    border: 1px;
+    color: $color-background-white;
+    width: 218px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #9356dc, #ff79da);
+}
+
+.intro a {
+    text-decoration: none;
+}

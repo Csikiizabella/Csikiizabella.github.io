@@ -1,0 +1,67 @@
+// Typography
+$font-primary: 'Roboto', sans-serif;
+
+// Primary Colors//
+
+$color-background-white: #fff;
+$color-footer-primary: #353535;
+$color-text-primary: #000000;
+$color-background-secondary: #f6f6f6;
+$color-background-primary: #EAEAEA;
+$font-shrikhand: 'shrikhand';
+$font-roboto: 'roboto';
+$color-badge-background: #99E2D0;
+
+
+@mixin gradient-background($start-color, $end-color, $direction) {
+    background: linear-gradient($direction, $start-color, $end-color);
+}
+
+
+//buttons//
+$color-tertiary: #9356DC;
+$color-secondary: #FF79DA;
+$gradient-direction: to top;
+$gradient-direction-bottom: to bottom;
+$color-checkmark: #99E2D0;
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(180deg);
+    }
+}

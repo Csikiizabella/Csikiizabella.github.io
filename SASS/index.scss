@@ -1,0 +1,46 @@
+@import 'var.scss';
+
+* {
+  font-family: $font-roboto;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-roboto;
+  color: $color-text-primary;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.intro {
+  display: Flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $color-background-secondary;
+
+  p {
+    height: 46px;
+    top: 220px;
+    left: 34px;
+    font-family: $font-roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  h2 {
+    height: 68px;
+    display: Flex;
+    font-family: $font-roboto;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $color-text-primary;
+  }
+}

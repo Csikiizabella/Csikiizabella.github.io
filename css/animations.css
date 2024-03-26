@@ -1,0 +1,230 @@
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+@keyframes rotateIn {
+  0% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+@-webkit-keyframes rotateOut {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+}
+@keyframes rotateOut {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(180deg);
+            transform: rotateZ(180deg);
+  }
+}
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  height: 100%;
+  -webkit-animation: loaderAnimation 2s forwards;
+          animation: loaderAnimation 2s forwards;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #353535;
+  -webkit-transition: opacity 2s, visibility 2s;
+  transition: opacity 2s, visibility 2s;
+}
+
+.loader::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  border: 15px solid #EAEAEA;
+  border-top-color: #EAEAEA;
+  -webkit-animation: loading 2s ease infinite;
+          animation: loading 2s ease infinite;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes loaderAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes loaderAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.animate {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-animation: appear 0.7s ease-out forwards;
+          animation: appear 0.7s ease-out forwards;
+}
+
+@-webkit-keyframes appear {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.meals:nth-child(1) .meal-cards {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.meals:nth-child(2) .meal-cards {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+.meals:nth-child(3) .meal-cards {
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+}
+
+.tickmark {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-animation: fadeOut 0.6s, rotateOut 0.6s;
+          animation: fadeOut 0.6s, rotateOut 0.6s;
+  overflow: hidden;
+  color: #99E2D0;
+}
+
+.meal-cards:hover .tick {
+  width: 80px;
+}
+
+.meal-cards:hover .tickmark {
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+  -webkit-animation: fadeIn 0.6s, rotateIn 0.6s;
+          animation: fadeIn 0.6s, rotateIn 0.6s;
+}
+
+.home-card .card-contents .heart:hover .filled-img {
+  opacity: 100;
+  border-radius: unset;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.menu .menu-title .like-img:hover .filled-img {
+  opacity: 100;
+  border-radius: unset;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.intro-button:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
