@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 0px;
+    height: 100%;
     background-color: $color-badge-background;
     transition: all 1s linear;
 }
@@ -58,7 +59,7 @@
 }
 
 .How-it-works {
-    background-color: $color-background-secondary;
+    background-color: $color-background-white;
     padding: 20px;
 
     .steps-list {

@@ -56,8 +56,9 @@
     }
 }
 
-.restaurants {
+.restaurant {
     padding: 20px;
+    background-color: $color-background-secondary;
 }
 
 .home-card {
@@ -66,6 +67,7 @@
     overflow: hidden;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     position: relative;
+    margin-bottom: 18px;
 
     img {
         width: 100%;
@@ -76,7 +78,7 @@
         top: 10px;
         right: 10px;
         background-color: $color-badge-background;
-        color: $color-background-white;
+        color: $color-badge-secondary;
         padding: 10px 20px;
         border-radius: 6px;
     }

@@ -262,6 +262,7 @@
 
 .meal-cards:hover .tick {
   width: 80px;
+  height: 100px;
 }
 
 .meal-cards:hover .tickmark {
@@ -650,7 +651,7 @@ body {
 }
 
 .How-it-works {
-  background-color: #f6f6f6;
+  background-color: #ffff;
   padding: 20px;
 }
 
@@ -845,6 +846,7 @@ body {
 
 .restaurants {
   padding: 20px;
+  background-color: #f6f6f6;
 }
 
 .home-card {
@@ -854,6 +856,7 @@ body {
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   position: relative;
+  margin-bottom: 18px;
 }
 
 .home-card img {
@@ -865,7 +868,7 @@ body {
   top: 10px;
   right: 10px;
   background-color: #99E2D0;
-  color: #fff;
+  color: #008766;
   padding: 10px 20px;
   border-radius: 6px;
 }
@@ -901,6 +904,7 @@ body {
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1019607843);
   background: #fff;
   border-radius: 15px;
+  margin-bottom: 18px;
 }
 
 .restaurant-card a {
@@ -991,6 +995,7 @@ body {
 
 .restaurant {
   padding: 20px;
+  background-color: #f6f6f6;
 }
 
 .top-img {

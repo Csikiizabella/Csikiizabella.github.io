@@ -81,6 +81,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 0px;
+  height: 100%;
   background-color: #99E2D0;
   -webkit-transition: all 1s linear;
   transition: all 1s linear;
@@ -148,7 +149,7 @@
 }
 
 .How-it-works {
-  background-color: #f6f6f6;
+  background-color: #fff;
   padding: 20px;
 }
 .How-it-works .steps-list {
